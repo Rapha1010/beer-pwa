@@ -4,7 +4,7 @@ let category = '';
 let data_json;
 let bfCategory = '';
 
-var endPointUrlAddressLocal = "http://localhost:8081/api/itens";
+var endPointUrlAddressLocal = "http://localhost:9081/api/itens";
 var endPointUrlAddress = "https://deliveryfoodapi.herokuapp.com/api/itens";
 
 var auth = "Basic " + btoa(username + ":" + password);
@@ -21,6 +21,7 @@ var myInit = {
 var allItens = fetch(endPointUrlAddressLocal, myInit).then(function (response) {
     return response.json();
 }).then(function (data) {
+    load_area.style.display = "block";
     data_json = data;
     printCard(data);
 }).catch(function (err) {
@@ -32,11 +33,18 @@ menuCategory = function(description) {
     console.log(description);
     document.getElementById("catTitle").innerHTML = description || "Todas as Bebidas" ;
     bfCategory = category;
+
+    let content = document.getElementById("content");
+    loaded_elements = 0;
+    content.innerHTML= '';
+    load_area.style.display = "block";
+    
     category = description.toLowerCase();
     printCard();
 }
 
-let elements_per_load = 9;
+let load_area = document.getElementById("load-area");
+let elements_per_load = 3;
 let loaded_elements = 0;
 
 //Print Card
@@ -44,25 +52,37 @@ function printCard() {
 
     let content = document.getElementById("content");
     let data_filter;
-    count = 0;
-    drink_amount = 10;
 
     if (category == bfCategory && category != '' ) return false;
 
-    if (category != '')
+    if (category != '') {
         data_filter = data_json.filter(d => category.includes(d.category));
-    else
+    } else {
         data_filter = data_json;
+    }
 
-    content.innerHTML='';
-    data_filter.forEach(element => {
-        content.innerHTML+=card(element);
-    });
+    let html_content = "";
+    for(let i = loaded_elements; i < elements_per_load + loaded_elements; i++ ){
+        html_content+=card(data_filter[i]);
+    }
+
+    loaded_elements = loaded_elements + elements_per_load;
+
+    if (loaded_elements >= data_filter.length){
+        loaded_elements = data_filter.length
+        load_area.style.display = "none";
+    }
+
+    content.innerHTML+=html_content;
 }
 
 
 //Template Engine
 card = function ({id, description, price, imageUrl}) {
+
+    var url = window.location.origin;
+
+    console.log(url);
 
     return `<div class="col-4 col-md-4">
                 <div class="card h-200" style="width: 7rem;">

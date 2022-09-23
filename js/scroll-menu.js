@@ -2,6 +2,15 @@ let content = document.getElementById("horizontal-scroll-menu");
 let template = `
 <div class="container">
     <div class="menu-container">
+            <div class="menu-item">
+            <a onclick="menuCategory('')">
+                <div class="card h-200" style="width: 7rem;">
+                    <div class="card-body">
+                        Todos
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="menu-item">
             <a onclick="menuCategory('Cerveja')">
                 <div class="card h-200" style="width: 7rem;">
@@ -34,15 +43,6 @@ let template = `
                 <div class="card h-200" style="width: 7rem;">
                     <div class="card-body">
                         Vinho
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="menu-item">
-            <a onclick="menuCategory('')">
-                <div class="card h-200" style="width: 7rem;">
-                    <div class="card-body">
-                        Todos
                     </div>
                 </div>
             </a>

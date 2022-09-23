@@ -107,3 +107,7 @@ footer{
     min-width: 112px;
     width: 112px;
 }
+
+.load-area {
+    margin: 40px;
+}

@@ -13,8 +13,8 @@
     <link href="../../img/favicon.ico" rel="icon" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="application-name" content="MyApp" />
-    <meta name="apple-mobile-web-app-title" content="Beer Beer" />
+    <meta name="application-name" content="BeerApp" />
+    <meta name="apple-mobile-web-app-title" content="BeerApp" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -84,7 +84,9 @@
         </div>
     </div>
 
-    <div class="row" id="content"></div>
+    <div class="row" id="content">
+        Página Offline
+    </div>
 
     <div class="row load-area" id="load-area" style="display: none;">
         <div class="col-12">
@@ -100,23 +102,5 @@
 
 <script src="../../js/bootstrap.bundle.min.js"></script>
 <script src="../../js/scroll-menu.js"></script>
-<script src="../../js/script.js"></script>
-<script>
-
-    let swRegister = null;
-    if ('serviceWorker' in navigator) {
-
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register("../../service-worker.js").then((reg) => {
-
-                console.log("service work registrado");
-                swRegister = reg;
-
-            });
-        });
-
-
-    }
-</script>
 
 </html>
