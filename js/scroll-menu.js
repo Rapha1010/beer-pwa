@@ -30,15 +30,6 @@ let template = `
             </a>
         </div>
         <div class="menu-item">
-            <a onclick="menuCategory('Drink')">
-                <div class="card h-200" style="width: 7rem;">
-                    <div class="card-body">
-                    Drink 
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="menu-item">
             <a onclick="menuCategory('Vinho')">
                 <div class="card h-200" style="width: 7rem;">
                     <div class="card-body">

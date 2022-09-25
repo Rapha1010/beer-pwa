@@ -60,8 +60,6 @@ self.addEventListener("activate", (evt) => {
 
 self.addEventListener("fetch", (evt) => {
 
-    console.log(evt.request.mode);
-
     if(evt.request.mode !== "navigate"){
         return;
     }

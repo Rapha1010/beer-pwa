@@ -1,0 +1,326 @@
+[
+    {
+        "id": "0b747533-f0fc-4b2c-b0d6-b56a3cf3980d",
+        "description": "Coca-cola Zero 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "coca-zero-350-160x119.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "df4322c6-a4bc-4f7a-9e12-f6c9be3261a9",
+        "description": "Guaraná Antartica 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "guarana-antartica-350-160x160.png",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "4df451cc-29a8-4623-8dac-f5194df1f824",
+        "description": "Pepsi Pet 2 Litros",
+        "category": "refrigerante",
+        "price": 8.5,
+        "imageUrl": "PepsiPet2Litros.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "331fbef0-f26c-4a51-8e45-7711f0f17a9a",
+        "description": "Heineken 350ml",
+        "category": "cerveja",
+        "price": 3.5,
+        "imageUrl": "heineken-350-160x160.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "1638568b-c455-4421-9261-10a6441984bc",
+        "description": "Baden Baden Cristal 600ml",
+        "category": "cerveja",
+        "price": 11.9,
+        "imageUrl": "BadenBadenPilsenCristal.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "9741ae56-707e-4899-9d7a-3b15f089e4ee",
+        "description": "Tcheca Pilsner Urquell 500ml",
+        "category": "cerveja",
+        "price": 26.9,
+        "imageUrl": "TchecaPilsnerUrq500ml.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "9f5ed12a-a09e-4b8e-bf9d-b8b660c1211c",
+        "description": "Chil Cu Caminos Car 750ml",
+        "category": "vinho",
+        "price": 32.9,
+        "imageUrl": "ChilenoCuCaminosCar750ml.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "5c9a628a-67b4-42c5-9af7-1dd8ea22e29a",
+        "description": "Chil Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 23.1,
+        "imageUrl": "ChilCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "7b3791ab-f487-4bbd-b6d7-fce301eea9b7",
+        "description": "Tinto Arg Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 32.9,
+        "imageUrl": "TintoArgCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:35:03",
+        "updateDateTime": "25-09-2022 12:35:03"
+    },
+    {
+        "id": "526180aa-2906-40f3-a2af-f1eed4763708",
+        "description": "Coca-cola Zero 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "coca-zero-350-160x119.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "5995ab49-60de-467e-8001-08a3cf0b4c24",
+        "description": "Guaraná Antartica 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "guarana-antartica-350-160x160.png",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "7373f4ec-a2ae-4f0b-9e83-8386dfec6e5f",
+        "description": "Pepsi Pet 2 Litros",
+        "category": "refrigerante",
+        "price": 8.5,
+        "imageUrl": "PepsiPet2Litros.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "b05703f9-b6de-4a65-b4aa-3db52473ebcf",
+        "description": "Heineken 350ml",
+        "category": "cerveja",
+        "price": 3.5,
+        "imageUrl": "heineken-350-160x160.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "f3ff3403-1a9e-4250-a211-7226b1c67be8",
+        "description": "Baden Baden Cristal 600ml",
+        "category": "cerveja",
+        "price": 11.9,
+        "imageUrl": "BadenBadenPilsenCristal.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "45183ce6-b452-4510-b534-dd05114bf3b0",
+        "description": "Tcheca Pilsner Urquell 500ml",
+        "category": "cerveja",
+        "price": 26.9,
+        "imageUrl": "TchecaPilsnerUrq500ml.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "62696a6f-bdc2-43fd-a15c-2b801da75f01",
+        "description": "Chil Cu Caminos Car 750ml",
+        "category": "vinho",
+        "price": 32.9,
+        "imageUrl": "ChilenoCuCaminosCar750ml.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "a0b9bd27-c85e-4f8c-82ca-dd94915018c8",
+        "description": "Chil Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 23.1,
+        "imageUrl": "ChilCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "b71a1a46-c411-4538-aa75-64d02446af78",
+        "description": "Tinto Arg Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 39.9,
+        "imageUrl": "TintoArgCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:36:03",
+        "updateDateTime": "25-09-2022 12:36:03"
+    },
+    {
+        "id": "d8f858b7-0bb4-405f-b291-e9d9a0befcf1",
+        "description": "Coca-cola Zero 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "coca-zero-350-160x119.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "d239336e-733e-4fc9-9600-9ad99721a7fc",
+        "description": "Guaraná Antartica 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "guarana-antartica-350-160x160.png",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "d8d89554-b79b-46f4-927e-7a0365a76998",
+        "description": "Pepsi Pet 2 Litros",
+        "category": "refrigerante",
+        "price": 8.5,
+        "imageUrl": "PepsiPet2Litros.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "81622930-0757-4a82-a417-761f3659ea22",
+        "description": "Heineken 350ml",
+        "category": "cerveja",
+        "price": 3.5,
+        "imageUrl": "heineken-350-160x160.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "64b320ff-4d3c-464d-a320-2285aad1a644",
+        "description": "Baden Baden Cristal 600ml",
+        "category": "cerveja",
+        "price": 11.9,
+        "imageUrl": "BadenBadenPilsenCristal.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "f8be9dc2-290b-4e13-98de-dfb22de4184b",
+        "description": "Tcheca Pilsner Urquell 500ml",
+        "category": "cerveja",
+        "price": 26.9,
+        "imageUrl": "TchecaPilsnerUrq500ml.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "49b410ae-15bf-4d41-af2e-e72c070ad09d",
+        "description": "Chil Cu Caminos Car 750ml",
+        "category": "vinho",
+        "price": 32.9,
+        "imageUrl": "ChilenoCuCaminosCar750ml.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "d13e0eb0-9222-488d-a152-157a8d14a086",
+        "description": "Chil Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 23.1,
+        "imageUrl": "ChilCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "bf6397d1-bc5f-46f8-b57c-a19f1a3e16e4",
+        "description": "Tinto Arg Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 39.9,
+        "imageUrl": "TintoArgCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:40:52",
+        "updateDateTime": "25-09-2022 12:40:52"
+    },
+    {
+        "id": "c549bff7-2b2d-4f64-a198-70f5e3eeecac",
+        "description": "Coca-cola Zero 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "coca-zero-350-160x119.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "d134101a-e7d2-444f-a19a-7c39b8f16ee3",
+        "description": "Guaraná Antartica 350ml",
+        "category": "refrigerante",
+        "price": 3.5,
+        "imageUrl": "guarana-antartica-350-160x160.png",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "524793f9-1040-4d8d-b3e3-6f006b6e5fde",
+        "description": "Pepsi Pet 2 Litros",
+        "category": "refrigerante",
+        "price": 8.5,
+        "imageUrl": "PepsiPet2Litros.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "e59c715d-73d4-439c-b8bf-b25e527ee0d5",
+        "description": "Heineken 350ml",
+        "category": "cerveja",
+        "price": 3.5,
+        "imageUrl": "heineken-350-160x160.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "dde852d9-f3c4-4f8c-841e-b0d3ee7911f0",
+        "description": "Baden Baden Cristal 600ml",
+        "category": "cerveja",
+        "price": 11.9,
+        "imageUrl": "BadenBadenPilsenCristal.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "2ea29346-9485-4e93-b008-114007c990fd",
+        "description": "Tcheca Pilsner Urquell 500ml",
+        "category": "cerveja",
+        "price": 26.9,
+        "imageUrl": "TchecaPilsnerUrq500ml.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "55ccc980-c91a-40c4-9967-004ad7cd76c1",
+        "description": "Chil Cu Caminos Car 750ml",
+        "category": "vinho",
+        "price": 32.9,
+        "imageUrl": "ChilenoCuCaminosCar750ml.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "327589ab-66ca-4c83-a338-b15eccbb9bde",
+        "description": "Chil Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 23.1,
+        "imageUrl": "ChilCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    },
+    {
+        "id": "e9bbf05d-e95e-4ec8-bafa-451972590495",
+        "description": "Tinto Arg Cabernet Sauvignon 750ml",
+        "category": "vinho",
+        "price": 39.9,
+        "imageUrl": "TintoArgCabernetSauvignon750ml.jpg",
+        "creationDateTime": "25-09-2022 12:49:01",
+        "updateDateTime": "25-09-2022 12:49:01"
+    }
+]
