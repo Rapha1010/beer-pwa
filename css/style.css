@@ -8,15 +8,18 @@ header{
 }
 
 .card{
-    /* margin-left: 10px; */
-    margin-top: 10px;
-    margin-right: 80px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .card-title{
     font-weight: 400;
     font-size: 14px;
-    
+}
+.card-price{
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .logo{
@@ -52,7 +55,7 @@ main{
 
 footer{
     padding: 10px;
-    background-color: rgb(5, 184, 44);
+    background-color: #cc5803;
 }
 
 .card-img-top {
@@ -110,4 +113,13 @@ footer{
 
 .load-area {
     margin: 40px;
+}
+
+#btLoadMore {
+    background-color:#f4a261 ;
+    border:0px;
+}
+
+#btInstall {
+    background-color:#f4a261 ;
 }

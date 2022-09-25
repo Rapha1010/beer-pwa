@@ -14,7 +14,7 @@ var myInit = {
     headers: {
         'Authorization': auth
     },
-    mode: 'cors',
+    // mode: 'cors',
 };
 
 
@@ -23,7 +23,7 @@ var allItens = fetch(endPointUrlAddressLocal, myInit).then(function (response) {
 }).then(function (data) {
     load_area.style.display = "block";
     data_json = data;
-    printCard(data);
+    printCard();
 }).catch(function (err) {
     // There was an error
     console.warn('Something went wrong.', err);
@@ -61,10 +61,14 @@ function printCard() {
         data_filter = data_json;
     }
 
+    if (elements_per_load >= data_filter.length) elements_per_load = data_filter.length;
+
     let html_content = "";
     for(let i = loaded_elements; i < elements_per_load + loaded_elements; i++ ){
         html_content+=card(data_filter[i]);
     }
+
+    
 
     loaded_elements = loaded_elements + elements_per_load;
 
@@ -82,15 +86,16 @@ card = function ({id, description, price, imageUrl}) {
 
     var url = window.location.origin;
 
-    console.log(url);
+    //col-12 col-md-6 col-lg-4 d-flex align-items-stretch
 
-    return `<div class="col-4 col-md-4">
-                <div class="card h-200" style="width: 7rem;">
-                    <img src="${imageUrl}" class="card-img-top img-responsive" alt="...">
-                <div class="card-body">
-                <div class="card-title">${description} - R$ ${price}</div>
-                <a onclick="findOneIten('${id}')" class="btn-comprar btn btn-warning">Comprar</a>
-                </div>
+    return `<div class="col-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="${url}/beer-pwa/img/itens/${imageUrl}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title">${description}</div>
+                        <div class="card-price">R$ ${price}</div>
+                    </div>
+                    <a onclick="findOneIten('${id}')" class="btn-comprar btn btn-warning">Comprar</a>
                 </div>
             </div>`;
 }

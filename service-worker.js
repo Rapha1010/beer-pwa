@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const CACHE_NAME = "BeerAppCache";
 
@@ -6,10 +6,9 @@ const FILES_CACHE = [
     "css/bootstrap.min.css",
     "css/bootstrap-icons.css",
     "css/style.css",
-    "js/scroll-menu.js",
     "js/script.js",
     "js/bootstrap.bundle.min.js",
-    "src/pages/offline.html",
+    "offline.html",
     "img/bg.jpg",
     "img/slider1.jpg",
     "img/slider2.jpg",
@@ -34,7 +33,7 @@ self.addEventListener("install", (evt) => {
         })
 
     );
-    self.skipWaiting();
+    // self.skipWaiting();
 
 });
 
@@ -54,12 +53,14 @@ self.addEventListener("activate", (evt) => {
         })
 
     );
-    self.clients.claim();
+    // self.clients.claim();
 });
 
 // //Responder Off-line
 
 self.addEventListener("fetch", (evt) => {
+
+    console.log(evt.request.mode);
 
     if(evt.request.mode !== "navigate"){
         return;
@@ -69,10 +70,11 @@ self.addEventListener("fetch", (evt) => {
         fetch(evt.request).catch(()=>{
             return caches.open(CACHE_NAME).then((cache) =>{
 
-                return cache.match("src/pages/offline.html");
+                return cache.match(`offline.html`);
             });
 
         })
     );
 
 });
+
