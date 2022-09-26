@@ -3,6 +3,7 @@ let password = '123456';
 let category = '';
 let data_json;
 let bfCategory = '';
+let filter = '';
 
 var endPointUrlAddressLocal = "http://localhost:9081/api/itens";
 var endPointUrlAddress = "https://deliveryfoodapi.herokuapp.com/api/itens";
@@ -31,6 +32,14 @@ var allItens = fetch(file, myInit).then(function (response) {
     console.warn('Something went wrong.', err);
 });
 
+
+
+document.getElementById("search").addEventListener('input', function (evt) {
+    filter = this.value;
+    menuCategory('');
+});
+
+
 menuCategory = function(description) {
     console.log(description);
     document.getElementById("catTitle").innerHTML = description || "Todas as Bebidas" ;
@@ -50,6 +59,13 @@ let load_area = document.getElementById("load-area");
 let elements_per_load = 3;
 let loaded_elements = 0;
 
+function strLike(filter, str)  {
+    str = str.toLowerCase();
+    filter = filter.toLowerCase();
+
+    return str.indexOf(filter);
+}
+
 //Print Card
 function printCard() {
 
@@ -62,6 +78,10 @@ function printCard() {
         data_filter = data_json.filter(d => category.includes(d.category));
     } else {
         data_filter = data_json;
+    }
+
+    if (filter != '') {
+        data_filter = data_json.filter(d => strLike(filter, d.description) > -1 ? d.description : 0 );
     }
 
     let final = loaded_elements + elements_per_load;
