@@ -1,34 +1,42 @@
 {
   "name": "BeerApp",
-  "short_name": "BApp",
-  "icons": [{
-    "src": "img/icons/128.png",
-    "sizes": "128x128",
-    "type": "image/png"
-  }, {
-    "src": "img/icons/144.png",
-    "sizes": "144x144",
-    "type": "image/png"
-  }, {
-    "src": "img/icons/152.png",
-    "sizes": "152x152",
-    "type": "image/png"
-  }, {
-    "src": "img/icons/180.png",
-    "sizes": "180x180",
-    "type": "image/png"
-  }, {
-    "src": "img/icons/256.png",
-    "sizes": "256x256",
-    "type": "image/png"
-  }, {
-    "src": "img/icons/512.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "maskable"
-  }],
-  "start_url": "index.html",
+  "short_name": "BeerApp",
+  "description": "Beverage Delivery",
+  "icons": [
+    {
+      "src": "img/icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#ff5cb7",
-  "theme_color": "#ff5cb7"
+  "background_color": "#fd7e14",
+  "theme_color": "#fd7e14"
 }

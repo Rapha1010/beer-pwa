@@ -138,17 +138,24 @@ function findOneIten(itenId) {
 
 let windowInstall = null;
 
-const btInstall = document.getElementById("btInstall");
+let btInstall = document.getElementById("btInstall");
 
 window.addEventListener('beforeinstallprompt', callInstallWindow);
 
 function callInstallWindow(evt){
+    
+    console.log('callInstallWindow',evt);
     windowInstall = evt;
 }
 
-let inicializarInstalacao = function(){
+let initInstall = function(){
 
-    if(windowInstall != null) btInstall.removeAttribute("hidden");
+    setTimeout(function(){
+        if(windowInstall != null)
+            btInstall.removeAttribute("hidden");
+    }, 500);
+
+    console.log("windowInstall", windowInstall);
     
     btInstall.addEventListener("click", function(){
 
@@ -161,7 +168,7 @@ let inicializarInstalacao = function(){
             if(choice.outcome === 'accepted'){
                 console.log("Usuário fez a instalação do app");
             }else{
-                console.log("Usuário NÃO fez a instalação do app");
+                btInstall.removeAttribute("hidden");
             }
 
         });
@@ -169,3 +176,14 @@ let inicializarInstalacao = function(){
     });
 
 }
+
+/*
+Status do Navegado
+*/
+
+let navegacao = true;
+
+window.addEventListener("load", (event) => {
+    //console.log(navigator.onLine ? "Online" : "OFFline");
+    navigator.onLine ? navegacao = true : navegacao = false;
+});

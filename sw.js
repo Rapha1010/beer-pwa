@@ -1,12 +1,11 @@
-"use strict";
-
 const CACHE_NAME = "BeerAppCache";
 
 const FILES_CACHE = [
     "css/bootstrap.min.css",
     "css/bootstrap-icons.css",
     "css/style.css",
-    "js/script.js",
+    "js/AppCore.js",
+    "js/DynamicEvents.js",
     "js/bootstrap.bundle.min.js",
     "offline.html",
     "img/bg.jpg",
@@ -33,11 +32,10 @@ self.addEventListener("install", (evt) => {
         })
 
     );
-    // self.skipWaiting();
 
 });
 
-// //Ativar Service Worker
+//Ativando o Service Worker
 self.addEventListener("activate", (evt) => {
 
     evt.waitUntil(
@@ -45,34 +43,37 @@ self.addEventListener("activate", (evt) => {
         caches.keys().then((keylist) => {
 
             return Promise.all(keylist.map((key) => {
-                if(key !== CACHE_NAME){
+
+                if (key !== CACHE_NAME) {
                     return caches.delete(key);
-                } 
-            }));
+                }
+
+            }))
 
         })
 
-    );
-    // self.clients.claim();
+    )
+
 });
 
-// //Responder Off-line
+//Experiencia Offline
 
 self.addEventListener("fetch", (evt) => {
 
-    if(evt.request.mode !== "navigate"){
+    if (evt.request.mode !== "navigate") {
         return;
     }
 
     evt.respondWith(
-        fetch(evt.request).catch(()=>{
-            return caches.open(CACHE_NAME).then((cache) =>{
 
-                return cache.match(`offline.html`);
+        fetch(evt.request).catch(() => {
+            return caches.open(CACHE_NAME).then((cache) => {
+
+                return cache.match("offline.html");
+
             });
-
         })
+
     );
 
 });
-
