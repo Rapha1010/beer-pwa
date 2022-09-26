@@ -27,33 +27,6 @@
         "updateDateTime": "25-09-2022 12:35:03"
     },
     {
-        "id": "331fbef0-f26c-4a51-8e45-7711f0f17a9a",
-        "description": "Heineken 350ml",
-        "category": "cerveja",
-        "price": 3.5,
-        "imageUrl": "heineken-350-160x160.jpg",
-        "creationDateTime": "25-09-2022 12:35:03",
-        "updateDateTime": "25-09-2022 12:35:03"
-    },
-    {
-        "id": "1638568b-c455-4421-9261-10a6441984bc",
-        "description": "Baden Baden Cristal 600ml",
-        "category": "cerveja",
-        "price": 11.9,
-        "imageUrl": "BadenBadenPilsenCristal.jpg",
-        "creationDateTime": "25-09-2022 12:35:03",
-        "updateDateTime": "25-09-2022 12:35:03"
-    },
-    {
-        "id": "9741ae56-707e-4899-9d7a-3b15f089e4ee",
-        "description": "Tcheca Pilsner Urquell 500ml",
-        "category": "cerveja",
-        "price": 26.9,
-        "imageUrl": "TchecaPilsnerUrq500ml.jpg",
-        "creationDateTime": "25-09-2022 12:35:03",
-        "updateDateTime": "25-09-2022 12:35:03"
-    },
-    {
         "id": "9f5ed12a-a09e-4b8e-bf9d-b8b660c1211c",
         "description": "Chil Cu Caminos Car 750ml",
         "category": "vinho",
@@ -104,24 +77,6 @@
         "category": "refrigerante",
         "price": 8.5,
         "imageUrl": "PepsiPet2Litros.jpg",
-        "creationDateTime": "25-09-2022 12:36:03",
-        "updateDateTime": "25-09-2022 12:36:03"
-    },
-    {
-        "id": "b05703f9-b6de-4a65-b4aa-3db52473ebcf",
-        "description": "Heineken 350ml",
-        "category": "cerveja",
-        "price": 3.5,
-        "imageUrl": "heineken-350-160x160.jpg",
-        "creationDateTime": "25-09-2022 12:36:03",
-        "updateDateTime": "25-09-2022 12:36:03"
-    },
-    {
-        "id": "f3ff3403-1a9e-4250-a211-7226b1c67be8",
-        "description": "Baden Baden Cristal 600ml",
-        "category": "cerveja",
-        "price": 11.9,
-        "imageUrl": "BadenBadenPilsenCristal.jpg",
         "creationDateTime": "25-09-2022 12:36:03",
         "updateDateTime": "25-09-2022 12:36:03"
     },

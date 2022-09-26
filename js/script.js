@@ -6,7 +6,7 @@ let bfCategory = '';
 
 var endPointUrlAddressLocal = "http://localhost:9081/api/itens";
 var endPointUrlAddress = "https://deliveryfoodapi.herokuapp.com/api/itens";
-var file = "/beer-pwa/data_json.json";
+var file = "/../data_json.json";
 
 var auth = "Basic " + btoa(username + ":" + password);
 
@@ -55,7 +55,6 @@ function printCard() {
 
     let content = document.getElementById("content");
     let data_filter;
-    let final = elements_per_load + loaded_elements;
 
     if (category == bfCategory && category != '' ) return false;
 
@@ -65,9 +64,9 @@ function printCard() {
         data_filter = data_json;
     }
 
-    
+    let final = loaded_elements + elements_per_load;
 
-    if (elements_per_load >= data_filter.length) elements_per_load = data_filter.length;
+    if (final > data_filter.length) final = data_filter.length;
 
     let html_content = "";
     for(let i = loaded_elements; i < final; i++ ){
@@ -75,10 +74,6 @@ function printCard() {
     }
 
     loaded_elements = loaded_elements + elements_per_load;
-
-    console.log("elements_per_load",elements_per_load);
-    console.log("loaded_elements",loaded_elements);
-    console.log("data_filter.length",data_filter.length);
 
     if (loaded_elements >= data_filter.length){
         loaded_elements = data_filter.length
