@@ -33,13 +33,6 @@ var allItens = fetch(file, myInit).then(function (response) {
 });
 
 
-
-document.getElementById("search").addEventListener('input', function (evt) {
-    filter = this.value;
-    menuCategory('');
-});
-
-
 menuCategory = function(description) {
     console.log(description);
     document.getElementById("catTitle").innerHTML = description || "Todas as Bebidas" ;
@@ -143,31 +136,27 @@ function findOneIten(itenId) {
 #
 */
 
-let janelaInstalacao = null;
+let windowInstall = null;
 
 const btInstall = document.getElementById("btInstall");
 
-window.addEventListener('beforeinstallprompt', gravarJanela);
+window.addEventListener('beforeinstallprompt', callInstallWindow);
 
-function gravarJanela(evt){
-    janelaInstalacao = evt;
+function callInstallWindow(evt){
+    windowInstall = evt;
 }
 
 let inicializarInstalacao = function(){
 
-    setTimeout(function() {
-        if(janelaInstalacao != null) 
-            btInstall.removeAttribute("hidden");
-    },500)
-
-    btInstall.removeAttribute("hidden");
+    if(windowInstall != null) btInstall.removeAttribute("hidden");
+    
     btInstall.addEventListener("click", function(){
 
         btInstall.setAttribute("hidden", true);
 
-        janelaInstalacao.prompt();
+        windowInstall.prompt();
 
-        janelaInstalacao.userChoice.then((choice) => {
+        windowInstall.userChoice.then((choice) => {
 
             if(choice.outcome === 'accepted'){
                 console.log("Usuário fez a instalação do app");

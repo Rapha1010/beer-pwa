@@ -62,3 +62,8 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
 
 });
+
+document.getElementById("search").addEventListener('input', function (evt) {
+    filter = this.value;
+    menuCategory('');
+});

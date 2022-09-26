@@ -83,7 +83,7 @@
 
     <div class="row cat-title">
         <div class="col-12">
-            <h2 id="catTitle">Cerveja</h2>
+            <h2 id="catTitle">Todas as Bebidas</h2>
         </div>
     </div>
 
@@ -105,11 +105,11 @@
 </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/scroll-menu.js"></script>
-<script src="js/script.js"></script>
+<script src="js/AppCore.js"></script>
+<script src="js/DynamicEvents.js"></script>
 <script>
-
     let swRegister = null;
+   
     if ('serviceWorker' in navigator) {
 
         window.addEventListener('load', () => {
@@ -120,9 +120,10 @@
                 inicializarInstalacao();
             });
         });
-
-
     }
+
+    console.log(navigator);
+
 </script>
 
 </html>
