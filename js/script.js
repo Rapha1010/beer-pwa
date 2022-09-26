@@ -100,7 +100,7 @@ card = function ({id, description, price, imageUrl}) {
 
     return `<div class="col-4 d-flex align-items-stretch">
                 <div class="card">
-                    <img src="${url}/beer-pwa/img/itens/${imageUrl}" class="card-img-top" alt="...">
+                    <img src="${url}/img/itens/${imageUrl}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="card-title">${description}</div>
                         <div class="card-price">R$ ${price}</div>
